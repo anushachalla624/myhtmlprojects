@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>mybankappv1</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <center>
+                <font color="orange">Anusha</font>
+                <font color="blue"> Bank</font>
+            </center>
+        </h1>
+        <nav>
+            <a href="index.html">About Bank</a> &nbsp
+            <a href="Loans.html">Loans</a> &nbsp
+            <a href="Branches.html">Branches</a> &nbsp
+            <a href="Customer_Registration_Form.html">Customer Registration</a> &nbsp
+            <a href="Customer_Profile_Update.html">Customer Profile Update </a> &nbsp
+            <a href="Internet_Banking_Login.html">Internet Banking</a> &nbsp
+            <a href="#">Loan Eligibility Check</a> &nbsp
+            <a href="EMI_Calculator.html">EMI Calculator</a> &nbsp
+            <a href="Credit_Card_Application.html">Credit Card Application</a> &nbsp
+            <a href="Branch_FeedBack.html">Branch Feedback</a> &nbsp
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <caption>
+                <h2>
+                    <center>Loan Eligibility Check</center>
+                </h2>
+            </caption>
+            <form action="Loan_Eligibility_Check.html" method="post">
+                <table border="2" align="center">
+                    <tr>
+                        <td><label>Name</label></td>
+                        <td><input type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Annual Income</label></td>
+                        <td><input type="number" name="annualIncome"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Existing EMIs</label></td>
+                        <td><input type="number" name="existingEMIs"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Employment</label></td>
+                        <td><input type="radio" name="employment" value="salaried">Salaried
+                            <input type="radio" name="employment" value="Business">Business
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Loan Type</label></td>
+                        <td>
+                            <select name="loanType">
+                                <option value="home">Home Loan</option>
+                                <option value="personal">Personal Loan</option>
+                                <option value="auto">Auto Loan</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Loan Amount</label></td>
+                        <td><input type="number" name="loanAmount"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Start Date</label></td>
+                        <td><input type="date" name="startDate"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Purpose</label></td>
+                        <td><input type="text" name="purpose"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><input type="submit" value="Check Eligibility"> </td>
+                    </tr>
+                </table>
+            </form>
+
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <h3>
+            <center>
+                <font color="green">copy@Anusha</font>"
+            </center>
+        </h3>
+    </footer>
+    <hr>
+</body>
+
+</html>

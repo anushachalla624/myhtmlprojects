@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>mybankappv1</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <center>
+                <font color="orange">Anusha</font>
+                <font color="blue"> Bank</font>
+            </center>
+        </h1>
+        <nav>
+            <a href="index.html">About Bank</a> &nbsp
+            <a href="Loans.html">Loans</a> &nbsp
+            <a href="Branches.html">Branches</a> &nbsp
+            <a href="Customer_Registration_Form.html">Customer Registration</a> &nbsp
+            <a href="Customer_Profile_Update.html">Customer Profile Update </a> &nbsp
+            <a href="Internet_Banking_Login.html">Internet Banking</a> &nbsp
+            <a href="Loan_Eligibility_Check.html">Loan Eligibility Check</a> &nbsp
+            <a href="#">EMI Calculator</a> &nbsp
+            <a href="Credit_Card_Application.html">Credit Card Application</a> &nbsp
+            <a href="Branch_FeedBack.html">Branch Feedback</a> &nbsp
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <form>
+                <caption>
+                    <center>
+                        <h1>EMI Calculator</h1>
+                    </center>
+                </caption>
+                <table border="2" align="center">
+                    <tr>
+                        <td><label>Loan Amount</label></td>
+                        <td><input type="number" id="loanAmount" name="loanAmount"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Interest Rate(%)</label></td>
+                        <td><input type="number" id="interestRate" name="interestRate" step="0.01"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Loan Tenure </label></td>
+                        <td><input type="number" id="loanTenure" name="loanTenure"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Tenure Type</label></td>
+                        <td><select id="tenureType" name="tenureType">
+                                <option value="months">Months</option>
+                                <option value="years">Years</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><label>EMI Start Date</label></td>
+                        <td><input type="date" id="emiStartDate" name="emiStartDate"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><input type="submit" value="Calculate EMI">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <h3>
+            <center>
+                <font color="green">copy@Anusha</font>"
+            </center>
+        </h3>
+    </footer>
+    <hr>
+</body>
+
+</html>

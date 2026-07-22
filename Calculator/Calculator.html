@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+<style>
+
+  
+
+    .display {
+    display: block;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    background-color: #f4f4f4;
+    border-radius: 8px;
+
+    font-size: 28px;
+    text-align: right;
+    line-height: 40px;
+    color: #000;
+
+    overflow: hidden;
+    white-space: nowrap;
+}
+.calculator {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+    body {
+    justify-content: center;
+    margin-top: 100px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    
+}
+
+
+.numclass div {
+    
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.numclass input[type="button"] {
+    width: 70px;
+    height: 70px;
+    font-size: 22px;
+    border: none;
+    border-radius: 8px;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+}
+
+.action{
+
+    background-color:orange !important ;
+
+  }
+
+
+</style>
+
+</head>
+<html>
+
+<body>
+
+    <div class="calculator">
+    <output id="display" class="display">0</output>
+
+
+
+    <div class="numclass">
+
+        
+    <div>
+    
+    
+    <input type="button" value="AC" onclick="document.getElementById('display').value=''">
+    <input type="button" value="X" onclick="document.getElementById('display').value =document.getElementById('display').value.slice(0,-1)">
+    <input type="button" value="%" onclick="document.getElementById('display').value =document.getElementById('display').value+'%'">
+    <input type="button" class="action" value="/" >
+    
+
+</div>
+<div>
+    <input type="button" value="7" >
+    <input type="button" value="8">
+    <input type="button" value="9" >
+    <input type="button"  class="action" value="*" >
+
+</div>
+<div>
+    <input type="button" value="4" >
+    <input type="button" value="5">
+    <input type="button" value="6" >
+    <input type="button" class="action" value="-" >
+    
+
+</div>
+<div>
+    <input type="button" value="1" >
+    <input type="button" value="2">
+    <input type="button" value="3">
+    <input type="button" class="action" value="+" >
+    
+
+</div>
+<div>
+    <input type="button" value="B" >
+    <input type="button" value="0">
+    <input type="button" value=".">
+    <input type="button" class="action" value="=" >
+    
+
+</div>
+</div>
+    </div>
+
+</body>
+
+
+</html>
